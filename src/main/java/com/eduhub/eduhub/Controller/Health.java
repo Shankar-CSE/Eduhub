@@ -1,4 +1,4 @@
-package com.eduhub.eduhub.controller;
+package com.eduhub.eduhub.Controller;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.core.env.Environment;
@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class health {
+public class Health {
 
     @GetMapping("/")
     public String root(){
@@ -18,7 +18,7 @@ public class health {
     @Value("${spring.application.name}")
     private String Appname;
 
-    public health(Environment environment){
+    public Health(Environment environment){
         this.environment = environment;
     }
 
