@@ -31,11 +31,7 @@ public class StudentService {
         return id;
     }
 
-    public String getFirstName() {
-        return firstName;
-    }
+    public String getFirstName() { return firstName; }
 
-    public String getLastName() {
-        return lastName;
-    }
+    public String getLastName() { return lastName; }
 }
